@@ -1,26 +1,25 @@
 @import "tailwindcss";
 
+@theme {
+  --color-hyorin-bg: #050811;
+  --color-hyorin-card: rgba(11, 19, 43, 0.65);
+  --color-hyorin-border: rgba(56, 189, 248, 0.25);
+  --color-hyorin-cyan: #00f2fe;
+  --color-hyorin-ice: #38bdf8;
+  --color-hyorin-glow: rgba(0, 242, 254, 0.2);
+
+  --shadow-ice: 0 0 25px -5px rgba(0, 242, 254, 0.35);
+  --shadow-ice-hover: 0 0 35px 2px rgba(56, 189, 248, 0.5);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #050811;
+  --foreground: #f8fafc;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #050811;
+  color: #f8fafc;
+  overflow-x: hidden;
 }
+
